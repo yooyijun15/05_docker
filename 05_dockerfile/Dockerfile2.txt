@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+RUN echo ' (shell form) Hello'
+RUN ["echo", "(exec form) Hello"]
+RUN ["bash", "-c", "echo '(exec form) Hello'"]
